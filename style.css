@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Nunito:wght@300&family=Roboto:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    color: white;
+    background-color: #072026;
+    
+}
+:root{
+    ---green-d:#051418;
+    ---yellow-l:#efd871;
+    ---yellow-d:#e9b949;
+    ---yellow-ll:#f9efc5;
+    ---transition:all 0.2s linear;
+    ---font-nunito:'nunito', sans-serif;
+    ---font-gruppo:'gruppo',sans-serif;
+    ---letter-spacing:3px;
+}
+header{
+    background-color: var(---green-d);
+}
+.container{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    font-family:var(---font-gruppo);
+    font-size: 35px;
+    gap: 380px;
+    position: fixed;
+    background-color: var(---green-d);
+}
+.navbar__color{
+    background-color: #072026;
+    transition: all 0.5s linear;
+    animation-duration: 2s;
+}
+.nav__links{
+    display: flex;
+}
+.nav__links ul{
+    display: flex;
+    gap:40px;
+    list-style: none;
+}
+.nav__links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav__links ul li a:hover{
+    color: var(---yellow-l);
+}
+.nav__btn{
+    margin-left: 30px;
+}
+
+/* section__hero */
+.section__header{
+    background-color: var(---green-d);
+}
+.section__hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:50px;
+    
+}
+.section__hero__info{
+    position: relative;
+}
+.section__hero__info h1{
+    font-family:var(---font-gruppo);
+    font-size: 60px;
+    position: absolute;
+    top:170px;
+}
+.section__hero__info p{
+    position: absolute;
+    top:320px;
+    font-family: var(---font-nunito);
+    font-size: 25px;
+    max-width: 600px;
+    color:var(---yellow-ll);
+}
+.section__hero__info .button{
+    position: absolute;
+    top:425px;
+    display: flex;
+    gap:30px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color:var(---yellow-l);
+    cursor: pointer;
+}
+.btn:hover{
+    width: 155px;
+    background-color:var(---yellow-d);
+    transition:var(---transition)
+}
+.btn a{
+    text-decoration: none;
+    color: rgb(136, 116, 116);
+    letter-spacing:var(---letter-spacing)
+}
+.section__hero__img img{
+    max-width: 100%;
+    width: 400px;
+    height: 500px;
+    border-radius: 15px;
+    margin: 135px 0;
+}
+
+/* ---About Me */
+.section__about{
+    height: 500px;
+}
+.about__title, .skills__title, .project__title , .contact__title{
+    text-align: center;
+    padding: 70px 0;
+}
+h2{
+    letter-spacing: var(---letter-spacing);
+    font-family:var(---font-gruppo) ;
+    font-size:40px;
+}
+.underline{
+    width: 120px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(---yellow-l);
+    max-width: 1400px;
+    margin: 12px auto;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+}
+h3{
+    font-family: var(---font-gruppo);
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    
+}
+.content p{
+    color: var(---yellow-ll);
+    font-size:20px;
+    font-family: var(---font-nunito);
+    letter-spacing:var(---letter-spacing);
+    margin-top:10px;
+}
+.content h4{
+    font-family: var(---font-gruppo);
+    font-size: 20px;
+    letter-spacing:var(---letter-spacing);
+}
+
+/* /* ---Skills--- */
+.section__skills{
+    background-color: var(---green-d);
+    height: 400px;
+}
+.skills{
+    display:flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 70px;
+}
+.skills__icon{
+    text-align: center;
+}
+.skills__icon p{
+    font-family: var(---font-nunito);
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+/* ---Project title */
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    margin: 70px 0;
+    border-bottom: 1px dashed var(---yellow-l);
+}
+.project__img img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+.project__img{
+    display: grid;
+    justify-content: center;
+    background-color: var(---green-d);
+    margin-bottom: 70px;
+}
+/* .project__content:nth-child(1){
+    grid-column-start: 1;
+    grid-row-start: 1;
+} */
+.project__content{
+    margin-top: 20px;
+}
+.project__content p{
+    font-family: var(---font-nunito);
+    letter-spacing: 2px;
+    margin: 10px 0;
+}
+.project__content ul{
+    margin-bottom: 10px;
+}
+.project__content ul li{
+    list-style: none;
+    font-family: var(---font-nunito);
+    letter-spacing: 2px;
+    padding: 3px 0;
+}
+.more__project__btn{
+    position: relative;
+    left: 46%;
+    margin-bottom: 70px;
+}
+
+/* ---Contact--- */
+.section__contact{
+    background-color: var(---green-d);
+}
+.contact__container{
+    display: flex;
+    justify-content: space-around
+}
+.Contact__info__items{
+    margin: 30px 0;
+    list-style: none;
+}
+.Contact__info__items a{
+    text-decoration: none;
+    color: #fff;
+}
+.Contact__info__items a:hover{
+    color: var(---yellow-l);
+}
+.Contact__info__items span{
+    font-size: 17px;
+    font-family: var(---font-nunito);
+}
+.form__container{
+    width: 500px;
+    padding-bottom: 20px;
+    
+}
+.input{
+    background-color: var(---green-d);
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+}
+#message{
+    width: 500px;
+    height: 400px;
+    background-color: var(---green-d);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.input::placeholder{
+    font-size: 20px;
+    color:var(---yellow-d)
+}
+.send__btn{
+    margin-bottom: 80px;
+}
+
+/* ----footer---- */
+footer{
+    background-color: #413a1d;
+}
+.social__icons{
+    display: flex;
+    justify-content: center;
+    gap:100px;
+    padding: 60px 0;
+}
+.social__icons li{
+list-style: none;
+}
+.social__icons li a{
+    color:var(---yellow-l);
+}
+.social__icons li a:hover{
+    color: var(---yellow-d);
+}
+
+
+
+
