@@ -2,7 +2,7 @@
     "basics": {
       "name": "Tuan Anh Pham",
       "label": "Programmer",
-      "image": "profile.jpg",
+      "image": "img/profile.jpg",
       "email": "TuanAnh@gmail.com",
       "phone": "(912) 555-4321",
       "url": "https://api.github.com/users/tuananhpham95/repos",
@@ -22,20 +22,34 @@
     },
     "work": [
       {
-        "name": "Company",
-        "position": "President",
-        "url": "https://company.com",
-        "startDate": "2013-01-01",
-        "endDate": "2014-01-01",
-        "summary": "Description…",
-        "highlights": [
-          "Started the company"
-        ]
+        "name": "Elis Texttil Service AB",
+        "position": "Group leader",
+        "url": "https://se.elis.com/sv",
+        "startDate": "2016-01-01",
+        "endDate": "2022-01-01",
+        "summary": "Leads the daily work and creates conditions for the team to be able to do their utmost. Engage and motivate the employees to renewal and development and work to ensure that the business's goals are met."      
+      },
+      {
+        "name": "Låsmästarna",
+        "position": "Låsmästare",
+        "url": "https://se.elis.com/sv",
+        "startDate": "2016-01-01",
+        "endDate": "2018-01-01",
+        "summary": "Create copies of keys, worship locks. Daily cash handling."      
+      },
+      {
+        "name": "Victoria Nails Spa",
+        "position": "Säljare",
+        "url": "https://se.elis.com/sv",
+        "startDate": "2018-01-01",
+        "endDate": "2020-01-01",
+        "summary": "Nail technician. Provides advice and high customer service. Daily cash handling. Resolve customer complaints quickly and efficiently."      
       }
     ],
-    "volunteer": [
-      {
-        "organization": "Organization",
+    
+    "about": [
+      { 
+        "description": "An ambitious and responsible guy, curious to learn new things, positive attitude and quick adaptability",
         "position": "Volunteer",
         "url": "https://organization.com/",
         "startDate": "2012-01-01",
@@ -48,10 +62,10 @@
     ],
     "education": [
       {
-        "institution": "University",
+        "institution": "chasacademy",
         "url": "https://chasacademy.se/",
         "area": "Software Development",
-        "studyType": "Bachelor",
+        "studyType": "YH",
         "startDate": "2022-08-01",
         "endDate": "2024-08-01"
       }
@@ -88,7 +102,10 @@
         "keywords": [
           "HTML",
           "CSS",
-          "JavaScript"
+          "JavaScript",
+          "Python",
+          "git",
+          "React"
         ]
       }
     ],
@@ -104,7 +121,9 @@
     "references": [
       {
         "name": "Alexander",
-        "reference": "Reference…"
+        "position": "IT-Chef",
+        "phone":"0032132030",
+        "email":"TuanAnh@gmail.com"
       }
     ]
   }

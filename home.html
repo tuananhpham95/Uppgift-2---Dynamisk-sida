@@ -4,232 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/abdbd0fbf7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <header id="home">
-        <div class="container">
-            <nav class="navbar">
-                <div class="nav__header">
-                    <p>Tuan Anh Pham</p>
-                </div>
-                <div class="nav__links">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#home">My CV</a></li>
+    <div id="root">
+        <nav class="nav" id="nav">
+            <div class="container">
+                <div class="navbar">
+                    <div class="nav-header">
+                        <a href="#home">Tuan Anh Pham</a>
+                    </div>
+                    <div class="nav-menu">
+                        <div class="menu-btn"></div>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#nav">Home</a></li>
                         <li><a href="#about">About</a></li>
+                        <li><a href="cv.html">MyCV</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#project">Project</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><button class="nav-darmode-btn"><i class="fa-sharp fa-solid fa-moon"></i></button></li>
                     </ul>
-                    <button class ="nav__btn">dark mode</button>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <section class="section__header">
-        <div class="container">
-            <div class="section__hero">
-                <article class="section__hero__info">
-                    <h1>Hi, I'm a Fullstack Developer</h1>
-                    <p>I love Building Beautiful Web Experience And Application</p>
-                    <div class="button">
-                        <button class="about__me btn"><a href="#">ABOUT ME </a></button>
-                        <button class="Project btn"><a href="">PROJECT</a></button>
-                    </div>
-                </article>
-                <article class="section__hero__img">
-                    <img src="/img/profile.jpg" alt="">
-                </article>
+               </div>    
             </div>
-        </div>
-    </section>
-    <section class="section__about" id="about">
-        <div class="container">
-            <div class="about__title">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="content">
-                <div class="about__info">
-                    <h3>Get To Know Me</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi exercitationem voluptatum dolorem itaque asperiores incidunt molestiae quibusdam cupiditate aliquid, voluptatem quae qui, dolore corporis quos deserunt maiores saepe nemo dolores?</p>
-                </div>
-                <div class="about__edu">
-                    <h3>Education</h3>
-                    <div>
-                        <p>2022-2024</p>
-                        <h4>Fullstack Javascript Developer - Chasacdemy</h4>
-                    </div>
-                    <div>
-                        <p>2019-2022</p>
-                        <h4>AI - Mälardalens Universitet</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section__skills" id="skills">
-        <div class="container">
-            <div class="skills__title">
-                <h2>Skills</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="skills">
-                <div class="skills__icon">
-                    <i class="fa-brands fa-html5 fa-2x"></i>
-                    <p>HTML</p>
-                </div>
-                <div class="skills__icon">
-                    <i class="fa-brands fa-square-js fa-2x"></i>
-                    <p>JAVASCRIPT</p>
-                </div>
-                <div class="skills__icon">
-                    <i class="fa-brands fa-css3-alt fa-2x"></i>
-                    <p>CSS</p>
-                </div>
-                <div class="skills__icon">
-                    <i class="fa-brands fa-github fa-2x"></i>
-                    <p>Git</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="project">
-        <div class="container">
-            <div class="project__title">
-                <h2>Project</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="projects">
-                <!-- <div class="project__img">
-                    <img src="/img/counter.png" alt="Counter game">
-                </div>
-                <div class="project__content">
-                    <h3>Counter Game</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste aspernatur velit sapiente hic facilis repudiandae, placeat expedita exercitationem ex.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ul>
-                    <div class="project__links">
-                        <button class="Project btn"><a href="">Sourse</a></button>
-                    </div>
-                </div>          
-            </div>
-            <div class="projects">
-                <div class="project__img">
-                    <img src="/img/gissatalet.png" alt="Gissa talet">
-                </div>
-                <div class="project__content reverse">
-                    <h3>Gissa talet</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste aspernatur velit sapiente hic facilis repudiandae, placeat expedita exercitationem ex.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ul>
-                    <div class="project__links">
-                        <button class="Project btn"><a href="">Sourse</a></button>
-                    </div>
-                </div>               
-            </div>
-            <div class="projects">
-                <div class="project__img">
-                    <img src="/img/hexcolor.png" alt="Hex Color">
-                </div>
-                <div class="project__content">
-                    <h3>Hex Color</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste aspernatur velit sapiente hic facilis repudiandae, placeat expedita exercitationem ex.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ul>
-                    <div class="project__links btn">
-                        <button class="Project btn"><a href="">Sourse</a></button>
-                    </div>
-                </div>                
-            </div>
-            <div class="projects">
-                <div class="project__img">
-                    <img src="/img/pass_message.png" alt="Passing message">
-                </div>
-                <div class="project__content reverse">
-                    <h3>Passing Message</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio iste aspernatur velit sapiente hic facilis repudiandae, placeat expedita exercitationem ex.</p>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                    </ul>
-                    <div class="project__links btn">
-                        <button class="Project btn"><a href="">Sourse</a></button>
-                    </div>
-                </div> -->
-            </div>
-            <div class="more__project__btn">
-                <button class="more__project btn"><a href="">More Project</a></button>
-            </div>
-        </div>
-    </section>
-    <section class="section__contact" id="contact">
-        <div class="container">
-            <div class="contact__title">
-                <h2>Contact</h2>
-                <div class="underline"></div>
-            </div>
-            <div class="contact__container">
-                <div class="contact__info">
-                    <h3>Contact Info</h3>
-                    <ul class="contact__info__lists">
-                        <li class="Contact__info__items">
-                            <i class="fa-solid fa-location-dot fa-2x"></i>
-                            <span>Address : Sweden , Eskilstuna Krongatan 25</span>
-                        </li>
-                        <li class="Contact__info__items">
-                            <i class="fa-solid fa-phone-volume fa-2x"></i>
-                            <a href="#"><span>Phone : +0046 722508247</span></a>
-                        </li>
-                        <li class="Contact__info__items">
-                            <i class="fa-solid fa-envelope fa-2x"></i>
-                            <a href="#"><span>Email : Chasacdemy@hotmail.com</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contact_form">
-                    <h3>Contact Form</h3>
-                    <form>
-                        <div class="form__container">
-                            <input type="text" name="name" id="name" placeholder="Name :" class="input">
+        </nav>
+        <header>
+            <div class="container">
+                <div class="header-content">
+                    <article class="content">
+                        <h1>Hi! I'm Tuan Anh Pham</h1>
+                        <p>I love Building Beautiful Web Experience And Application</p>
+                        <div class="buttons">
+                            <a href="#about">About Me</a>
+                            <a href="#portfolio">Project</a>
                         </div>
-                        <div class="form__container">
-                            <input type="text" name="email" id="email" class="input" placeholder="Email :">
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                        </ul>
+                    </article>
+                    <div class="header-img">
+                        <img src="img/profile.jpg" alt="">
+                    </div>
+                </div>        
+            </div>
+        </header>
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-title">
+                    <h1>About Me</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="section-content">
+                    <div class="info">
+                        <h3>Get To Know Me!</h3>
+                        <p>Hi, my name is Tuan Anh Pham. Currently I am living and working in Sweden. I'm quite interested in web programming just started the fullstack javascript course 3 months ago and this is my first project.</p>
+                    </div>
+                    <div class="info">
+                        <h3>Education</h3>
+                        <div>
+                            <p>2022-2024</p>
+                            <h4>Fullstack Javascript Developer - Chasacdemy</h4>
                         </div>
-                        <div class="form__container">
-                            <textarea name="message" class="input" id="message" cols="30" rows="10" maxlength="1000" placeholder="Message :"></textarea>
+                        <div>
+                            <p>2019-2022</p>
+                            <h4>AI - Mälardalens Universitet</h4>
                         </div>
-                        <div class="send__btn">
-                            <button class="btn"><a href="">Send</a></button>
-                        </div>
-                    </form>
-
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <ul class="social__icons">
-                <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="main.js"></script>
+        </section>
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Skills</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="skills-items">
+                    <div class="skills-item">
+                        <i class="fa-brands fa-html5 fa-2x"></i>
+                        <p>Html</p>
+                    </div>
+                    <div class="skills-item">
+                        <i class="fa-brands fa-square-js fa-2x"></i>
+                        <p>Javascript</p>
+                    </div>
+                    <div class="skills-item">
+                        <i class="fa-brands fa-css3-alt fa-2x"></i>
+                        <p>Css</p>
+                    </div>
+                    <div class="skills-item">
+                        <i class="fa-brands fa-github fa-2x"></i>
+                        <p>git</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="project" id="portfolio">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Portfolio</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="project-content">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h1>Contact</h1>
+                    <div class="underline"></div>
+                </div>
+                <div class="section-info">
+                    <div class="contact-info">
+                        <h3>Contact info</h3>
+                        <ul class="contact-lists">
+                            <li class="list-items">
+                                <i class="fa-solid fa-location-dot fa-2x"></i>
+                                <span>Address : Sweden , Eskilstuna Krongatan 25</span>
+                            </li>
+                            <li class="list-items">
+                                <i class="fa-solid fa-phone-volume fa-2x"></i>
+                                <a href="#"><span>Phone : +0046 722508247</span></a>
+                            </li>
+                            <li class="list-items">
+                                <i class="fa-solid fa-envelope fa-2x"></i>
+                                <a href="#"><span>Email : Chasacdemy@hotmail.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contact-form">
+                        <h3>Contact Form</h3>
+                        <form>
+                            <div class="form-container">
+                                <input type="text" name="name" id="name" placeholder="Name :" class="input">
+                            </div>
+                            <div class="form-container">
+                                <input type="text" name="email" id="email" class="input" placeholder="Email :">
+                            </div>
+                            <div class="form-container">
+                                <textarea name="message" class="input" id="message" cols="30" rows="10" maxlength="1000" placeholder="Message :"></textarea>
+                            </div>
+                            <div class="send-btn">
+                                <a href="">Send</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-square-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
